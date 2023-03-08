@@ -13,7 +13,7 @@ function App() {
   return (
     <div
       style={{
-        maxWidth: "800px",
+        maxWidth: "560px",
         display: "flex",
         flexDirection: "column",
         gap: "2rem",
@@ -31,7 +31,9 @@ function App() {
       </div>
       <HangmanDrawing />
       <HangmanWord />
-      <Keyboard />
+      <div style={{ alignSelf: "stretch" }}>
+        <Keyboard />
+      </div>
     </div>
   );
 }
