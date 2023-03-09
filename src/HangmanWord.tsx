@@ -23,7 +23,7 @@ export default function HangmanWord({
       }}
     >
       {wordToGuess.split("").map((letter, index) => (
-        <span style={{ borderBottom: "5px solid black" }}>
+        <span key={index} style={{ borderBottom: "5px solid black" }}>
           <span
             style={{
               visibility:
